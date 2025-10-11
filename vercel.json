@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "projects": [
+    {
+      "src": "dist/apps/react-monorepo/**",
+      "use": "@vercel/static"
+    }
+  ]
+}
