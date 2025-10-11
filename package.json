@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "build:react-monorepo": "npx nx build react-monorepo"
+    "build:react-monorepo": "npx nx build react-monorepo",
+    "vercel-build:react-monorepo": "npx nx build react-monorepo"
   },
   "private": true,
   "dependencies": {

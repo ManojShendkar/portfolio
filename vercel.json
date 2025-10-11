@@ -2,11 +2,9 @@
   "version": 2,
   "builds": [
     {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist/apps/react-monorepo"
-      }
+      "name": "react-monorepo",
+      "buildCommand": "npm run vercel-build:react-monorepo",
+      "outputDirectory": "dist/apps/react-monorepo"
     }
   ],
   "routes": [
