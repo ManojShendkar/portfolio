@@ -1,16 +1,4 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "name": "react-monorepo",
-      "buildCommand": "npm run vercel-build:react-monorepo",
-      "outputDirectory": "dist/apps/react-monorepo"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/react-monorepo/(.*)",
-      "dest": "/react-monorepo/index.html"
-    }
-  ]
+  "routes": [{ "src": "/(.*)", "dest": "/index.html" }]
 }
