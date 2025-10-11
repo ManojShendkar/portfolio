@@ -19,7 +19,7 @@ export default defineConfig(() => ({
   //  plugins: [ nxViteTsPaths() ],
   // },
   build: {
-    outDir: './dist',
+    outDir: '../../dist/apps/react-monorepo',
     emptyOutDir: true,
     reportCompressedSize: true,
     commonjsOptions: {
