@@ -1,9 +1,18 @@
 {
   "version": 2,
-  "projects": [
+  "builds": [
     {
-      "src": "dist/apps/react-monorepo/**",
-      "use": "@vercel/static"
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist/apps/react-monorepo"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/react-monorepo/(.*)",
+      "dest": "/react-monorepo/index.html"
     }
   ]
 }
