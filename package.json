@@ -4,14 +4,16 @@
   "license": "MIT",
   "scripts": {
     "build:react-monorepo": "npx nx build react-monorepo",
-    
     "vercel-build:react-monorepo": "npx nx build react-monorepo"
   },
   "private": true,
   "dependencies": {
+    "framer-motion": "^12.23.24",
     "react": "19.0.0",
     "react-dom": "19.0.0",
-    "react-router-dom": "6.29.0"
+    "react-icons": "^5.5.0",
+    "react-router-dom": "6.29.0",
+    "react-scroll": "^1.9.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.8.0",

@@ -1,0 +1,172 @@
+.section {
+  min-height: 100vh;
+  padding: 8rem 2rem;
+  color: white;
+  position: relative;
+  z-index: 2;
+  /* backdrop-filter: blur(6px); */
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.timeline {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Center gradient progress line */
+.timeline-progress {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  width: 6px;
+  background: linear-gradient(to bottom, #03a9f4, #4fc3f7);
+  border-radius: 4px;
+  transition: height 0.2s ease-out;
+  z-index: 1;
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  margin: 4rem 0;
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+/* Alternating sides */
+.timeline-item.left {
+  align-self: flex-start;
+  text-align: right;
+  transform: translateX(-50px);
+}
+
+.timeline-item.right {
+  align-self: flex-end;
+  text-align: left;
+  transform: translateX(50px);
+}
+
+.timeline-item.visible.left,
+.timeline-item.visible.right {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Dot exactly on line */
+.timeline-item .dot {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  width: 18px;
+  height: 18px;
+  background: #4fc3f7;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.timeline-item .dot.active {
+  background: #03a9f4;
+  transform: translateX(-50%) scale(1.3);
+}
+
+/* Content box */
+.timeline-content {
+  position: relative;
+  background: rgba(30, 30, 30, 0.8);
+  padding: 1.5rem;
+  border-radius: 12px;
+  display: inline-block;
+  max-width: 400px;
+  transition: all 0.6s ease;
+}
+
+/* Animated connecting line from dot to content */
+.timeline-content::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  width: 0;
+  height: 2px;
+  background-color: #03a9f4;
+  transition: width 0.6s ease;
+  z-index: -1;
+}
+
+.timeline-item.left .timeline-content::before {
+  right: 0;
+}
+
+.timeline-item.right .timeline-content::before {
+  left: 0;
+}
+
+/* Grow line when active */
+.timeline-content.line-active::before {
+  width: 30px;
+}
+
+/* Typography */
+.timeline-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content .company {
+  color: #aaa;
+  font-weight: 500;
+}
+
+.timeline-content .period {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content .description {
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .timeline-item {
+    width: 100%;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+    align-self: center;
+    text-align: left;
+    transform: translateX(0);
+  }
+
+  .timeline-progress {
+    left: 10px;
+    transform: none;
+  }
+
+  .timeline-item .dot {
+    left: 10px;
+    transform: none;
+  }
+
+  .timeline-content::before {
+    display: none;
+  }
+
+  .timeline-content {
+    max-width: 90%;
+    margin-left: 30px;
+  }
+}

@@ -1,0 +1,90 @@
+.about-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 2rem;
+  color: white;
+  z-index: 2;
+  /* backdrop-filter: blur(8px); */
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.about-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Rounded square wrapper */
+.image-square {
+  width: 450px;
+  height: 450px;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s ease, border-radius 0.4s ease;
+}
+
+/* Image inside square */
+.image-square img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Hover effect */
+.image-square:hover {
+  transform: scale(1.05);
+  border-radius: 25px; /* slightly different roundness on hover */
+}
+
+.about-right {
+  flex: 1;
+  padding: 2rem;
+  text-align: left;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-square {
+    width: 300px;
+    height: 300px;
+  }
+
+  .about-right {
+    padding: 1.5rem;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+}

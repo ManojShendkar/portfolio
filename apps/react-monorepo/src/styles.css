@@ -2,3 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 /* You can add global styles to this file, and also import other style files */
+
+
+:root {
+    --bg-color: #1e1e1e;
+    --text-color: #fff;
+    --primary-color: #03a9f4;
+    --secondary-color: #4fc3f7;
+    --content-bg: rgba(30, 30, 30, 0.8);
+  }
+  
+  body.light {
+    --bg-color: #f0f0f0;
+    --text-color: #222;
+    --primary-color: #2196f3;
+    --secondary-color: #90caf9;
+    --content-bg: #ffffffcc;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+  }
+  

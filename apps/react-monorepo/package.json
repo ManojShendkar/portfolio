@@ -2,6 +2,8 @@
   "name": "@react-monorepo/react-monorepo",
   "version": "0.0.1",
   "private": true,
+  "sourceRoot": "apps/react-monorepo/src",
+  "projectType": "application",  
   "nx": {
     "name": "react-monorepo"
   }

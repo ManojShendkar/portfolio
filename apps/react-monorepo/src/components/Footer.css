@@ -1,0 +1,17 @@
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.7);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.icon {
+  color: white;
+  margin: 0 1rem;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #4fc3f7;
+}
