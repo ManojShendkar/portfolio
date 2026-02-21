@@ -10,23 +10,30 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
   {
-    company: "TechCorp",
+    company: "Vector Consulting Group",
+    role: "Tech Lead",
+    period: "July 2024-Present",
+    description:
+      "Built two enterprise products from scratch (WCMS & VPROPLUS), leading architecture, feature development, and team mentoring. •	VPROPLUS: Implemented React NX monorepo, TANSTACK Query hooks, React Final Form, and AG Grid, while leading and training a team of 10 developers in React best practices.",
+  },
+  {
+    company: "Vector Consulting Group",
     role: "Frontend Developer",
-    period: "2022–Present",
+    period: "Feb 2022-July 2024",
     description:
       "Built scalable React apps with modern state management and optimized performance.",
   },
   {
-    company: "WebFusion",
-    role: "UI Engineer",
-    period: "2020–2022",
+    company: "BizOneSoft Global Solutions Pvt. Ltd.",
+    role: "Softwear Enginer",
+    period: "July 2019 - Feb 2022",
     description:
       "Implemented responsive UI components and dashboards using React & TypeScript.",
   },
   {
-    company: "DevBase",
-    role: "Intern",
-    period: "2019–2020",
+    company: "High Spirit Commercial Ventures Pvt. Ltd.",
+    role: "Production Executive",
+    period: "Aug 2018 - July 2019",
     description:
       "Assisted in front-end development and learned modern web technologies.",
   },
