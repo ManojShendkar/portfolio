@@ -1,4 +1,12 @@
 .footer {
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  display: flex;
+  z-index: 5;
+  height: 4.375rem;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   padding: 1.5rem;
   background: rgba(0, 0, 0, 0.7);

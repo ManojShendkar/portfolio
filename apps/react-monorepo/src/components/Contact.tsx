@@ -11,9 +11,9 @@ const Contact: React.FC = () => (
             <button type="submit">Send</button>
         </form>
         <div className="contact-info">
-            <p>📧 manoj@example.com</p>
-            <p>📞 +91 9876543210</p>
-            <p>📍 Pune, India</p>
+            <p>📧 shendkarmanoj1996@gmail.com</p>
+            <p>📞 +91 9819621261</p>
+            <p>📍 Mumbai, India</p>
         </div>
     </section>
 );

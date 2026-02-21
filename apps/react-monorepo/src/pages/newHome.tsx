@@ -21,7 +21,7 @@ const PortfolioPage: React.FC = () => {
 
   return (
     <div style={styles.container}>
-      <ConnectedParticles count={80} speed={0.7} maxDistance={150}/>
+      <ConnectedParticles count={80} speed={0.7} maxDistance={150} />
 
       {/* Navbar */}
       <header style={styles.header}>
@@ -131,9 +131,9 @@ const PortfolioPage: React.FC = () => {
           <button type="submit" style={styles.button}>Send Message</button>
         </form>
         <div style={{ marginTop: "2rem", textAlign: "center" }}>
-          <p>Email: <a href="mailto:manoj@example.com" style={styles.link}>manoj@example.com</a></p>
-          <p>Mobile: +91-9876543210</p>
-          <p>Location: Pune, India</p>
+          <p>Email: <a href="mailto:shendkarmanoj1996@gmail.com" style={styles.link}>shendkarmanoj1996@gmail.com</a></p>
+          <p>Mobile: +91-9819621261</p>
+          <p>Location: Mumbai, India</p>
         </div>
       </section>
 
